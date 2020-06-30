@@ -191,3 +191,131 @@ ion-icon {
     font-size: 45px;
     color:white;
   }
+
+ 
+  .site-main-wrapper{
+       position: relative;
+  }
+  .hamburger{
+      position: absolute;
+      top:40px;
+      right: 40px;
+      z-index: 11;
+      background: none;
+      border: none;
+      outline: none;
+      cursor: pointer;
+  }
+  .times{
+    position: absolute;
+    top:40px;
+    right: 40px;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  .mobile-nav{
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1001;
+      background-color: var(--light);
+      width: 100%;
+      height: 100%;
+      padding: 3rem;
+      padding-top: 5rem;
+      transform: translateX(-100%);
+      transition: all .5s ease-in-out;
+  }
+  .open{
+    transform: translateX(0);
+  }
+  .mobile-nav ul{
+      list-style-type: none;
+      text-align: center;
+
+  }
+  .mobile-nav ul li a{
+      color: var(--secondary);
+      text-decoration: none;
+      font-size: 2rem;
+      padding: 1rem;
+  }  
+
+
+  @media(max-width:1024px){
+    header #main-nav{
+        display:none; 
+    }
+    .hero .left img{
+        width: 260px;
+    }
+    .hero .right h1{
+        font-size: 3rem;
+    }
+    section.blogs .blog-wrapper{
+        display: grid;
+        grid-template-columns: repeat(1,1fr)
+    }
+}
+
+
+@media(max-width:576px){
+    .hero{
+        flex-direction: column;
+    }
+    .dp{
+        height: 180px;
+        width: 180px;
+    }
+    .hero .left{
+        position: absolute;
+        top: 440px;
+        padding-right: 30px;
+    }
+    .hero .right{
+        position: absolute;
+        top:220px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    section.about h1{
+        font-size: 2rem;
+    } 
+    section.about h3{
+        font-size: 1rem;
+    } 
+    section.about p{
+        font-size: 0.8rem;
+    } 
+    .section-heading{
+        font-size: 2rem;
+    }
+    .skill{
+        flex-direction: column;
+    } 
+    section.projects .card-wrapper{
+        grid-template-columns: repeat(1,1fr);
+    }
+    section.blogs .blog-wrapper{
+        padding-right: 2rem;
+        margin: 0rem;
+    }
+    .blogImg{
+        height:200px;
+        width:200px;
+    }
+    section.footer h1{
+        font-size: 1rem;
+    }
+    ion-icon {
+        font-size: 15px;
+        color:white;
+      }
+    .contactlinks {
+        padding-top: 1rem;
+        margin-left: 25%;
+        padding-bottom: 0;
+    }
+}

@@ -7,177 +7,205 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <nav class="flex items-center justify-between">
-                <div class="left flex items-center">
-                    <div class="branding"><img src="./images/logo.png"></div>
-                    <div>
-                        <a href="#">Home</a>
-                        <a href="#about">About</a>
-                        <a href="#skills">Skills</a>
-                        <a href="#projects">Projects</a>
-                        <a href="#blogs">Blog</a>
-                    </div>
-                </div>
-                <div class="right" >
-                    <button class="btn btn-primary"
-                        onClick="document.getElementById('footer').scrollIntoView();">
-                        Contact
-                    </button>
-                </div>
-            </nav>
-            <div class="hero flex items-center justify-between">
-                <div class="left flex-1 flex justify-center"><img class="dp" src="./images/man.jpg"></div>
-                <div class="right flex-1">
-                    <h6>Mayank Virmani</h6>
-                    <h1>I am a Programmer</h1>
-                    <p>I am a passionate programmer looking forward to building scalable and secure software systems
-                    </p>
-                    
-                </div>    
-            </div>
-        </div>
-    </header>
     
-    
-    <section id="about" class="about">
-        <div class="container ">
-            <div class="items-center">
-                <h1>About Me</h1>
-                <h3>Hello I am Mayank Virmani </h3>
-                <p>Currently, I am pursuing Bachelor of Technology from Netaji Subhas Institute of Technology. I’m extremely interested in learning and excelling at
-                     new technologies. Also interested in creative problem solving, a skill I developed by doing
-                      competitive programing for past two years. I am continuously on the lookout for opportunities that will
-                       help me know more and learn more.
-               </p>
-            </div>
-
+    <div class="site-main-wrapper">
+        <button onclick="ope()" class="hamburger">
+            <img src="./images/hamburger-menu.png"/>
+        </button>
+        <div id="mobileNav" class="mobile-nav">
+            <button onclick="clos()" class="times">
+                <img src="./images/hamburger-menu.png"/>
+            </button>
+            <ul>
+                <li>  <a onclick="clos()" href="#">Home</a>             </li>
+                <li>  <a onclick="clos()" href="#about">About</a>       </li>
+                <li>  <a onclick="clos()" href="#skills">Skills</a>     </li>
+                <li>  <a onclick="clos()" href="#projects">Projects</a> </li>
+                <li>  <a onclick="clos()" href="#blogs">Blog</a>        </li>
+                <li>  <a onclick="clos()" href="#footer">Contact</a>     </li>
+            </ul>
         </div>
-    </section>
-
-
-    <section id="skills" class="skills">
-        <div class="container ">
-            <div class="items-center">
-                <h1 class="section-heading">Skills</h1>
-                <div class="skill flex">
-                    <div class="left flex-1">
-                        <ul>
-                            <li>C/C++</li>
-                            <li>JavaScript</li>
-                            <li>Python</li>
-                            <li>ReactNative</li>    
-                        </ul>
+        <header>
+            <div class="container">
+                <nav id="main-nav" class="flex items-center justify-between">
+                    <div class="left flex items-center">
+                        <div class="branding"><img src="./images/logo.png"></div>
+                        <div>
+                            <a href="#">Home</a>
+                            <a href="#about">About</a>
+                            <a href="#skills">Skills</a>
+                            <a href="#projects">Projects</a>
+                            <a href="#blogs">Blog</a>
+                            <a href="#footer">Contact</a>
+                        </div>
                     </div>
+                    <!-- <div class="right" >
+                        <button class="btn btn-primary"
+                            onClick="document.getElementById('footer').scrollIntoView();">
+                            Contact
+                        </button>
+                    </div> -->
+                </nav>
+                <div class="hero flex items-center justify-between">
+                    <div class="left flex-1 flex justify-center"><img class="dp" src="./images/man.jpg"></div>
                     <div class="right flex-1">
-                        <ul>
-                            <li>ReactJs</li>
-                            <li>NodeJs</li>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                        </ul>
+                        <h6>Mayank Virmani</h6>
+                        <h1>I am a Programmer</h1>
+                        <p>I am a passionate programmer looking forward to building scalable and secure software systems
+                        </p>
+                        
+                    </div>    
+                </div>
+            </div>
+        </header>
+        
+        
+        <section id="about" class="about">
+            <div class="container ">
+                <div class="items-center">
+                    <h1>About Me</h1>
+                    <h3>Hello I am Mayank Virmani </h3>
+                    <p>Currently, I am pursuing Bachelor of Technology from Netaji Subhas Institute of Technology. I’m extremely interested in learning and excelling at
+                         new technologies. Also interested in creative problem solving, a skill I developed by doing
+                          competitive programing for past two years. I am continuously on the lookout for opportunities that will
+                           help me know more and learn more.
+                   </p>
+                </div>
+    
+            </div>
+        </section>
+    
+    
+        <section id="skills" class="skills">
+            <div class="container ">
+                <div class="items-center">
+                    <h1 class="section-heading">Skills</h1>
+                    <div class="skill flex">
+                        <div class="left flex-1">
+                            <ul>
+                                <li>C/C++</li>
+                                <li>JavaScript</li>
+                                <li>Python</li>
+                                <li>ReactNative</li>    
+                            </ul>
+                        </div>
+                        <div class="right flex-1">
+                            <ul>
+                                <li>ReactJs</li>
+                                <li>NodeJs</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </section>
+    
+    
+        <section id="projects" class="projects">
+            <div class="container">
+                <h1 class="section-heading">Projects</h1>
+                <div class="card-wrapper">
+                    <div class="card">
+                        <img src="./images/lane1.png">
+                        <a href="https://github.com/virmayank19/Lane-Detection"><h2>Lane-Detection</h2></a>
+                        <p>Built a project that detects lanes in video which is a key component for self driving cars.
+                            Used Canny edge detection and Hough’s transformation using OpenCv libraryo</p>
+                    </div>
+    
+                    <div class="card">
+                        <img src="./images/c.png">
+                        <a href="https://github.com/virmayank19/Collab-board"><h2>Collab-board</h2></a>
+                        <p>Collab-board is an online whiteboard that allows real-time collaboration 
+                            between them using Socketio </p>
+                    </div>
+    
+                    <div class="card">
+                        <img src="./images/messenger.png">
+                        <a href="https://github.com/virmayank19/messenger"><h2>Chat App</h2></a>
+                        <p>Made a Chat App which can be joined ny many users at a time and enables realtime,
+                             bi-directional communication between them in nodejs using socket.io </p>
+                    </div>
+    
+                    <div class="card">
+                        <img src="./images/whatsapp1.png">
+                        <a href="https://github.com/virmayank19/WhatsApp"><h2>WhatsApp UI Clone</h2></a>
+                        <p> Developed the user interface of whatsapp mobile app that supported features
+                             like swiping between tabs(calls, chats, etc.), entering chatbox  </p>
+                    </div>
+    
+                    <div class="card">
+                        <img src="./images/videoCall (2).jpg">
+                        <a href="https://github.com/virmayank19/video_call"><h2>Video-Call</h2></a>
+                        <p>Made a video-call web app that supports video calling between two clients   </p>
+                    </div>
+    
+                    <div class="card">
+                        <img src="./images/cart.jpg">
+                        <a href="https://github.com/virmayank19/E-commerce-website"><h2>Ecommerce Website UI clone</h2></a>
+                        <p>Made a functional user interface of an ecommerce website using React framework.
+                            It supports features like real time updating cart and different pages for each product  </p>
                     </div>
                 </div>
             </div>
-
-        </div>
-    </section>
-
-
-    <section id="projects" class="projects">
-        <div class="container">
-            <h1 class="section-heading">Projects</h1>
-            <div class="card-wrapper">
-                <div class="card">
-                    <img src="./images/lane1.png">
-                    <a href="https://github.com/virmayank19/Lane-Detection"><h2>Lane-Detection</h2></a>
-                    <p>Built a project that detects lanes in video which is a key component for self driving cars.
-                        Used Canny edge detection and Hough’s transformation using OpenCv libraryo</p>
-                </div>
-
-                <div class="card">
-                    <img src="./images/c.png">
-                    <a href="https://github.com/virmayank19/Collab-board"><h2>Collab-board</h2></a>
-                    <p>Collab-board is an online whiteboard that allows real-time collaboration 
-                        between them using Socketio </p>
-                </div>
-
-                <div class="card">
-                    <img src="./images/messenger.png">
-                    <a href="https://github.com/virmayank19/messenger"><h2>Chat App</h2></a>
-                    <p>Made a Chat App which can be joined ny many users at a time and enables realtime,
-                         bi-directional communication between them in nodejs using socket.io </p>
-                </div>
-
-                <div class="card">
-                    <img src="./images/whatsapp1.png">
-                    <a href="https://github.com/virmayank19/WhatsApp"><h2>WhatsApp UI Clone</h2></a>
-                    <p> Developed the user interface of whatsapp mobile app that supported features
-                         like swiping between tabs(calls, chats, etc.), entering chatbox  </p>
-                </div>
-
-                <div class="card">
-                    <img src="./images/videoCall (2).jpg">
-                    <a href="https://github.com/virmayank19/video_call"><h2>Video-Call</h2></a>
-                    <p>Made a video-call web app that supports video calling between two clients   </p>
-                </div>
-
-                <div class="card">
-                    <img src="./images/cart.jpg">
-                    <a href="https://github.com/virmayank19/E-commerce-website"><h2>Ecommerce Website UI clone</h2></a>
-                    <p>Made a functional user interface of an ecommerce website using React framework.
-                        It supports features like real time updating cart and different pages for each product  </p>
+        </section>
+    
+    
+        <section id="blogs" class="blogs">
+            <div class="container">
+                <h1 class="section-heading">My Blogs</h1>
+                <div class="blog-wrapper">
+                    <div class="blog">
+                        <img class="blogImg" src="./images/jsblog.png">
+                        <h2>Array Methods in JavaScript</h2>
+                        <p>In JavaScript, array is a single variable which can hold more than one value at a time. It is often
+                             used when we want to store list of elements and access them by a single variable.It’s a more convenient 
+                            way to store and structure information than is defining of lots of variables with different names.
+                            <a href="https://medium.com/@virmanimayank19/array-methods-in-javascript-8a6a924ec9a">more>></a>
+                         </p>
+                    </div>
+    
+                    <div class="blog">
+                        <img src="./images/os.png">
+                        <h2>Introduction To Operating Systems</h2>
+                        <p>The operating system is the program running at all times in the computer (usually 
+                            called the kernel), with all else being systems programs and application programs.
+                            It is a system software or program that manages the computer hardware and software
+                            resources
+                            <a href="https://medium.com/@virmanimayank19/introduction-to-operating-system-ee71e0a0f0d9">more>></a>
+                         </p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-
-    <section id="blogs" class="blogs">
-        <div class="container">
-            <h1 class="section-heading">My Blogs</h1>
-            <div class="blog-wrapper">
-                <div class="blog">
-                    <img src="./images/jsblog.png">
-                    <h2>Array Methods in JavaScript</h2>
-                    <p>In JavaScript, array is a single variable which can hold more than one value at a time. It is often
-                         used when we want to store list of elements and access them by a single variable.It’s a more convenient 
-                        way to store and structure information than is defining of lots of variables with different names.
-                        <a href="https://medium.com/@virmanimayank19/array-methods-in-javascript-8a6a924ec9a">more>></a>
-                     </p>
-                </div>
-
-                <div class="blog">
-                    <img src="./images/os.png">
-                    <h2>Introduction To Operating Systems</h2>
-                    <p>The operating system is the program running at all times in the computer (usually 
-                        called the kernel), with all else being systems programs and application programs.
-                        It is a system software or program that manages the computer hardware and software
-                        resources
-                        <a href="https://medium.com/@virmanimayank19/introduction-to-operating-system-ee71e0a0f0d9">more>></a>
-                     </p>
-                </div>
+        </section>
+    
+    
+    
+        <section id="footer" class="footer">
+            <h1 >Contact Me</h1>
+            <div class="contactlinks ">
+               <a href="https://www.facebook.com/mayank.virmani.146"> <ion-icon name="logo-facebook"></ion-icon>   </a>
+               <a href="https://in.linkedin.com/in/mayank-virmani-5a034a140"> <ion-icon name="logo-linkedin"></ion-icon> </a>
+               <a href="https://github.com/virmayank19"><ion-icon name="logo-github"></ion-icon>       </a>
+               <a href="mailto:virmanimayank19@gmail.com"> <ion-icon name="mail-outline"></ion-icon>>       </a>
             </div>
-        </div>
-    </section>
-
-
-
-    <section id="footer" class="footer">
-        <h1 >Contact Me</h1>
-        <div class="contactlinks ">
-           <a href="https://www.facebook.com/mayank.virmani.146"> <ion-icon name="logo-facebook"></ion-icon>   </a>
-           <a href="https://in.linkedin.com/in/mayank-virmani-5a034a140"> <ion-icon name="logo-linkedin"></ion-icon> </a>
-           <a href="https://github.com/virmayank19"><ion-icon name="logo-github"></ion-icon>       </a>
-           <a href="mailto:virmanimayank19@gmail.com"> <ion-icon name="mail-outline"></ion-icon>>       </a>
-        </div>
-    </section>
-
-    <footer>
-        <p class="copyright">Mayank Virmani © 2020</p>
-    </footer>
+        </section>
+    
+        <footer>
+            <p class="copyright">Mayank Virmani © 2020</p>
+        </footer>
+    </div>
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
-     
+    <script>
+        const ope=()=>{
+            document.getElementById("mobileNav").classList.add("open");
+        }
+        const clos=()=>{
+            document.getElementById("mobileNav").classList.remove("open");
+        }
+    </script>
+    
 </body>
 </html>
